@@ -1,10 +1,12 @@
+require 'minitest/autorun'
+require 'minitest/pride'
 require './lib/item'
 
 class ItemTest < Minitest::Test
 
   def test_it_exist
-    item = Item.new(item, price)
+    item = Item.new({name: 'Peach Pie (Slice)', price: "$3.75"})
 
-    assert_equal Item, item
+    assert_instance_of Item, item
   end
 end
