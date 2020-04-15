@@ -30,7 +30,7 @@ class FoodTruckTest < Minitest::Test
     item1 = Item.new({name: 'Peach Pie (Slice)', price: "$3.75"})
     item2 = Item.new({name: 'Apple Pie (Slice)', price: '$2.50'})
     food_truck = FoodTruck.new("Rocky Mountain Pies")
-
+require 'pry'; binding.pry
     food_truck.stock(item1, 30)
     assert_equal 30, food_truck.check_stock(item1)
   end
