@@ -5,4 +5,8 @@ class FoodTruck
     @name = name
     @inventory = Hash.new
   end
+
+  def check_stock(item)
+    @inventory.count(item)
+  end
 end
