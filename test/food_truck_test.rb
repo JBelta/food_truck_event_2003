@@ -59,5 +59,4 @@ class FoodTruckTest < Minitest::Test
       food_truck.stock(item2, 12)
       assert_equal ({item1, item2}), food_truck.inventory
     end
-
 end
